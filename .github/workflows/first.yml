@@ -15,4 +15,4 @@ jobs:
     needs: hello
     steps:
       - name: Print another message
-        run: echo "Goodbye from the second job!'
+        run: echo "Goodbye from the second job!"
