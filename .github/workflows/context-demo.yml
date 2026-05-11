@@ -1,0 +1,12 @@
+name: Context Demo
+on: [push, workflow_dispatch]
+
+jobs:
+  show-context:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Show date, SHA, actor
+        run: |
+          echo "Current date: $(date)"
+          echo "Commit SHA: ${{ github.sha }}"
+          echo "Actor: ${{ github.actor }}"
